@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .fa-regular fa-handshake {
+    margin-left: -80px;
+  }
+
+  .headlinessubdiv {
+    width: 65%;
+    height: 530px;
+    border: 1px solid black;
+    margin: 80px 0px;
+    background-size: 500%;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+  }
+
+  .read-more-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: none;
+  }
+
+  .save-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    /* display: none; */
+  }
+
+  .main-container {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .left-aside {
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .left-aside>button {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border-color: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-aside {
+    width: 100%;
+    height: 100%;
+    /* background-color: #bb9f00; */
+  }
+
+  .right-aside>div {
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid black; */
+  }
+
+  .headline-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .headlinessubdiv {
+  width: 33%;
+  height: 330px;
+  border: 1px solid black;
+  margin: 80px 0px;
+  background-size: cover;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  }
+  footer {
+  background: #000000;
+  padding: 5px 0px;
+  text-align: center;
+  color: white;
+  }
+
+  footer a {  
+  text-decoration: none;
+  color: rgb(33, 38, 38);
+  }
+  .loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      transition: opacity 0.75s, visibility 0.75s;
+      animation: loader 0.5s infinite ease;
+  }
+  .loader-hidden {
+      opacity: 0;
+      visibility: hidden;
+  }
+
+  .loader::after{
+      content: "";
+      width: 75px;
+      height: 75px;
+      border: 15px solid #000000;
+      border-top-color: #bb9f00;
+      border-radius: 0%;
+      animation: loading 1s ease infinite;
+  }
+
+  @keyframes loader {
+      from{
+          transform: rotate(0turn);
+      }
+      to{
+          transform: rotate(1turn);
+      }
+  }
